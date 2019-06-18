@@ -8,25 +8,46 @@
     <title></title>
   </head>
   <body>
+
     <div class="container">
-      <form class="account">
-        <label for="name">Name</label>
-        <input type="text" name="name"><br>
-        <label for="initial">Initial Balance</label>
-        <input id="initial" type="number" name="initial">
-        <button type="submit" name="button">Register</button>
-      </form>
-      <form class="deposit">
-        <label for="deposited">Deposit</label>
-        <input id="deposited" type="float" name="deposited"><br>
-        <label for="withdraw">Withdraw</label>
-        <input id="withdraw" type="float" name="withdraw">
-        <button type="submit" name="button">Execute</button>
-      </form>
-      <div class="balance">
-        <h3></h3>
-        <p></p>
+      <div class="col-md-6">
+        <div class="panel panel-info">
+          <div class="panel-heading">Create Account</div>
+          <div class="panel-body">
+            <form class="account">
+              <label for="name">Name</label>
+              <input type="text" name="name"><br>
+              <label for="initial">Initial Balance</label>
+              <input id="initial" type="number" name="initial">
+              <button type="submit" name="button">Register</button>
+            </form>
+          </div>
+        </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-info">
+          <div class="panel-heading">Deposit or Withdrawl</div>
+            <div class="panel-body">
+              <form class="deposit">
+                <label for="deposited">Deposit</label>
+                <input id="deposited" type="float" name="deposited"><br>
+                <label for="withdraw">Withdraw</label>
+                <input id="withdraw" type="float" name="withdraw">
+                <button type="submit" name="button">Execute</button>
+              </form>
+            </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="jumbotron">
+        <div class="balance">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+
     </div>
 
   </body>

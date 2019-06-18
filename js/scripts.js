@@ -27,6 +27,8 @@ $(document).ready(function(){
     console.log(user);
     $(".balance h3").text(account.name);
     $(".balance p").text("$" + account.balance.toFixed(2));
+    $("input:text[name=name]").val("");
+    $("#initial").val("");
   })
   $("form.deposit").submit(function(event) {
     event.preventDefault();
@@ -44,7 +46,8 @@ $(document).ready(function(){
       console.log(withdraw);
       account.withdraw(withdraw);
     }
-
+    $("#deposited").val("");
+    $("#withdraw").val("");
     //output
     $(".balance p").text("$" + account.balance.toFixed(2));
   })
